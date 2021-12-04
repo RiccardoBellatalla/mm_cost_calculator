@@ -1,0 +1,100 @@
+{
+  "fr" : {
+    "Standard Parcel" : {
+      "longest" : 50,
+      "medium" : 40,
+      "shortest" : 30,
+      "weight" : 20
+    },
+    "Large Parcel Dimensions" : {
+      "longest" : 120,
+      "medium" : 100,
+      "shortest" : 80,
+      "weight" : 40
+    },
+    "Extra Large Parcel Dimensions" : {
+      "longest" : 200,
+      "medium" : 100,
+      "shortest" : 80,
+      "weight" : 60
+    },
+    "Oversize Parcel Dimensions" : {
+      "longest" : 200,
+      "medium" : 160,
+      "shortest" : 120,
+      "weight" : 150
+    },
+    "" : {
+      "longest" : 0,
+      "medium" : 0,
+      "shortest" : 0,
+      "weight" : 0
+    }
+  },
+
+  "es" : {
+    "Standard Parcel" : {
+      "longest" : 50,
+      "medium" : 40,
+      "shortest" : 30,
+      "weight" : 20
+    },
+    "Large Parcel Dimensions" : {
+      "longest" : 120,
+      "medium" : 100,
+      "shortest" : 80,
+      "weight" : 40
+    },
+    "Extra Large Parcel Dimensions" : {
+      "longest" : 200,
+      "medium" : 100,
+      "shortest" : 80,
+      "weight" : 60
+    },
+    "Oversize Parcel Dimensions" : {
+      "longest" : 200,
+      "medium" : 160,
+      "shortest" : 120,
+      "weight" : 150
+    },
+    "" : {
+      "longest" : 0,
+      "medium" : 0,
+      "shortest" : 0,
+      "weight" : 0
+    }
+  },
+
+  "it" : {
+    "Standard Parcel" : {
+      "longest" : 50,
+      "medium" : 40,
+      "shortest" : 30,
+      "weight" : 20
+    },
+    "Large Parcel Dimensions" : {
+      "longest" : 120,
+      "medium" : 100,
+      "shortest" : 80,
+      "weight" : 40
+    },
+    "Extra Large Parcel Dimensions" : {
+      "longest" : 200,
+      "medium" : 100,
+      "shortest" : 80,
+      "weight" : 60
+    },
+    "Oversize Parcel Dimensions" : {
+      "longest" : 200,
+      "medium" : 160,
+      "shortest" : 120,
+      "weight" : 150
+    },
+    "" : {
+      "longest" : 0,
+      "medium" : 0,
+      "shortest" : 0,
+      "weight" : 0
+    }
+  }
+}

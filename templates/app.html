@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Calculator</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='css/app.css') }}"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <h2>Flask Calculator App</h2>
+      <small>RB</small>
+    </div>
+    <!-- Form -->
+    <div class="container">
+      <form action="/calculate" method="POST">
+        <div class="alert">
+          Parcel Type : {{ parcel_type }}
+        </div>
+        <div class="alert">
+          Largest size : {{ longest }} cm, Medium size : {{ medium }} cm, Shortest size : {{ shortest }} cm, Weight : {{ weight }} kg.
+        </div>
+        <div class="alert">
+          Dispatch Fees for this parcel = {{ cost_to_dispatch }}
+        </div>
+        <div class="form-group">
+          <label for="First Size">First Size</label>
+          <input type="text" placeholder="First Size" name="num1" value=0 id="size" onclick="validate_size()" />
+        </div>
+        <div class="alert">
+          {{ size1_alert }}
+        </div>
+        <div class="form-group">
+          <label for="Second Size">Second Size</label>
+          <input type="text" placeholder="Second Size" name="num2" value=0 />
+        </div>
+        <div class="alert">
+          {{ size2_alert }}
+        </div>
+        <div class="form-group">
+          <label for="Third Size">Third Size</label>
+          <input type="text" placeholder="Third Size" name="num3" value=0 />
+        </div>
+        <div class="alert">
+          {{ size3_alert }}
+        </div>
+        <div class="form-group">
+          <label for="Weight">Weight</label>
+          <input type="text" placeholder="Weight" name="weight" value=0 />
+        </div>
+        <div class="alert">
+          {{ weight_alert }}
+        </div>
+        <!--
+        <div class="form-group">
+          <label for="Operation">Operation</label>
+          <select name="operation">
+            <option value="add">Add</option>
+            <option value="subtract">Subtract</option>
+            <option value="multiply">Multiply</option>
+            <option value="divide">Divide</option>
+          </select>
+        </div>
+        -->
+        <input type="submit" value="Calculate" id="calc_btn" class="btn" />
+        <br />
+        <div class="alert">
+          {{ result }}
+        </div>
+      </form>
+    </div>
+    <script>
+      function validate_size() {
+        // Get the value of the input field with id="numb"
+        let x = document.getElementById("size").value;
+        // If x is Not a Number or less than one or greater than 10
+        let text;
+        if (isNaN(x) || x <= 0 || x > 10) {
+          text = "Input not valid";
+        } else {
+          text = "Input OK";
+        }
+        document.getElementById("demo").innerHTML = text;
+      }
+      </script>
+  </body>
+</html>
